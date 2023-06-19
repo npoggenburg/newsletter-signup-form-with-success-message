@@ -42,6 +42,7 @@
 
 .c-form__input + .c-form__label--error {
     visibility: hidden;
+    cursor: default;
     order: 2;
     opacity: 0;
     transform: translateY(1rem);

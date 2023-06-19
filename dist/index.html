@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div class="c-card" data-card="form">
+    <article class="c-card" data-card="form">
         <picture class="c-card__picture"><source media="(min-width: 900px)" srcset="assets/images/illustration-sign-up-desktop.svg">
             <img class="c-card__image" src="assets/images/illustration-sign-up-mobile.svg" alt="">
         </picture>
@@ -33,7 +33,7 @@
             <form action="#" class="c-form" data-card="submit">
                 <div class="c-form__group">
                     <label for="email" class="c-form__label">Email address</label>
-                    <input type="email" required name="email" id="email" class="c-form__input" placeholder="email@company.com">
+                    <input type="email" name="email" data-required id="email" class="c-form__input" placeholder="email@company.com">
                     <div class="c-form__label c-form__label--error">Valid email required</div>
                 </div>
 
@@ -42,9 +42,9 @@
                 </button>
             </form>
         </div>
-    </div>
+    </article>
 
-    <div class="c-card c-card--success is-hidden" data-card="success">
+    <article class="c-card c-card--success is-hidden" data-card="success">
         <div class="c-card__content c-card__content--top">
             <img class="c-card__title-icon" src="assets/images/icon-success.svg" alt="Icon Success">
             <h2 class="c-title c-title--h2">Thanks for subscribing!</h2>
@@ -59,7 +59,7 @@
                 </button>
             </form>
         </div>
-    </div>
+    </article>
 
     <script src="assets/js/app.js"></script>
 

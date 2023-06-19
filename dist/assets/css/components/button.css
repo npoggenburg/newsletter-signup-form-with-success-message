@@ -7,7 +7,18 @@
     color: var(--clr-neutral-900);
     border-radius: 0.5rem;
     position: relative;
+    transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
     cursor: pointer;
+    box-shadow: 0 0 0 hsl(var(--clr-hsl-primary), 0.35);
+}
+
+.c-button:hover {
+    box-shadow: 0 1rem 1rem hsl(var(--clr-hsl-primary), 0.35);
+}
+
+.c-button:focus {
+    transform: translateY(2px);
+    box-shadow: 0 0.5rem 0.5rem hsl(var(--clr-hsl-primary), 0.35);
 }
 
 .c-button__text {
@@ -26,11 +37,9 @@
     border-radius: 0.5rem;
     background: linear-gradient(90deg, hsl(var(--clr-hsl-primary), 0.5) 0%, var(--clr-primary) 100%);
     transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    box-shadow: 0 0 0 hsl(var(--clr-hsl-primary), 0.35);
     opacity: 0;
 }
 
 .c-button:hover::after {
     opacity: 1;
-    box-shadow: 0 1rem 1rem hsl(var(--clr-hsl-primary), 0.35);
 }
