@@ -1,0 +1,14 @@
+body {
+    font-family: var(--ff-base);
+    line-height: 1.6;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: var(--clr-neutral-300);
+    color: var(--clr-neutral-300);
+}
+
+p,
+ul {
+    margin-block: 1.5rem;
+}

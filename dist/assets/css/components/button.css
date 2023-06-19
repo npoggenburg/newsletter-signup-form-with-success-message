@@ -1,0 +1,36 @@
+.c-button {
+    border: 0;
+    padding: 1.25rem;
+    font-family: var(--ff-condensend);
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--clr-neutral-200) 0%, var(--clr-neutral-200) 100%);
+    color: var(--clr-neutral-900);
+    border-radius: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.c-button__text {
+    position: relative;
+    z-index: 10;
+}
+
+.c-button::after {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, hsl(var(--clr-hsl-primary), 0.5) 0%, var(--clr-primary) 100%);
+    transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    box-shadow: 0 0 0 hsl(var(--clr-hsl-primary), 0.35);
+    opacity: 0;
+}
+
+.c-button:hover::after {
+    opacity: 1;
+    box-shadow: 0 1rem 1rem hsl(var(--clr-hsl-primary), 0.35);
+}

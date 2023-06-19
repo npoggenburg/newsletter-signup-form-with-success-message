@@ -1,0 +1,17 @@
+.c-title {
+    --title-h2-size: 2.5rem;
+
+    color: hsl(var(--clr-hsl-neutral-200));
+    margin: 0;
+}
+
+.c-title--h2 {
+    font-size: var(--title-h2-size);
+    line-height: 1.1;
+}
+
+@media (min-width: 992px) {
+    .c-title {
+        --title-h2-size: 3.5rem;
+    }
+}

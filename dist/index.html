@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Newsletter Signup Form With SUccess Message</title>
+</head>
+<body>
+    
+    <div class="c-card" data-card="form">
+        <picture class="c-card__picture"><source media="(min-width: 900px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+            <img class="c-card__image" src="assets/images/illustration-sign-up-mobile.svg" alt="">
+        </picture>
+        <div class="c-card__content">
+            
+            <h2 class="c-title c-title--h2">Stay updated!</h2>
+            
+            <p>Join 60,000+ droduct managers receiving monthly updates on:</p>
+            
+            <ul class="c-check-list">
+                <li class="c-check-list__item">Product discovery and building what matters</li>
+                <li class="c-check-list__item">Measuring to ensure updates are a success</li>
+                <li class="c-check-list__item">And much more!</li>
+            </ul>
+
+            <form action="#" class="c-form" data-card="submit">
+                <div class="c-form__group">
+                    <label for="email" class="c-form__label">Email address</label>
+                    <input type="email" required name="email" id="email" class="c-form__input" placeholder="email@company.com">
+                    <div class="c-form__label c-form__label--error">Valid email required</div>
+                </div>
+
+                <button type="submit" class="c-button">
+                    <span class="c-button__text">Subscribe to monthly newsletter</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="c-card c-card--success is-hidden" data-card="success">
+        <div class="c-card__content c-card__content--top">
+            <img class="c-card__title-icon" src="assets/images/icon-success.svg" alt="Icon Success">
+            <h2 class="c-title c-title--h2">Thanks for subscribing!</h2>
+            
+            <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button
+                    inside to confirm your subscription.</p>
+        </div>
+        <div class="c-card__content c-card__content--bottom">
+            <form action="#" class="c-form" data-card="submit">
+                <button type="submit" class="c-button">
+                    <span class="c-button__text">Dismiss messager</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>

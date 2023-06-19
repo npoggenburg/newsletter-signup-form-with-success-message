@@ -1,0 +1,15 @@
+:root {
+    --clr-hsl-primary: 4, 100%, 67%;
+
+    --clr-hsl-neutral-200: 234, 29%, 20%;
+    --clr-hsl-neutral-300: 235, 18%, 26%;
+    --clr-hsl-neutral-400: 231, 7%, 60%;
+    --clr-hsl-neutral-900: 0, 0%, 100%;
+
+    --clr-primary: hsl(var(--clr-hsl-primary));
+
+    --clr-neutral-200: hsl(var(--clr-hsl-neutral-200));
+    --clr-neutral-300: hsl(var(--clr-hsl-neutral-300));
+    --clr-neutral-400: hsl(var(--clr-hsl-neutral-400));
+    --clr-neutral-900: hsl(var(--clr-hsl-neutral-900));
+}
